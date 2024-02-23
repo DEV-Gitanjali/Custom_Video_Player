@@ -26,16 +26,16 @@ function upadatePlayIcon(){
     }
 }
 
-// update progress & time stamp
-function upadateProgress(){
-    
+// Update progress & timestamp
+function updateProgress() {
+    progress.value = (video.currentTime / video.duration) * 100;
 }
- 
 
-// set video time to progress 
-function setVideoProgress(){
-    
-}
+// Set video time to progress
+function setVideoProgress() {
+    video.currentTime = (+progress.value * video.duration) / 100;
+  }
+  
 
 // stop video 
 function stopVideo(){
