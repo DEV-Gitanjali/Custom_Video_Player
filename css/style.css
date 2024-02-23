@@ -27,12 +27,38 @@ h1{
     border-top-right-radius: 10px;
 }
 
-.controls{
+
+.controls {
     background: #333;
     color: #fff;
+    width: 60%;
     border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .controls .btn{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .controls .fa-play{
+    color: #28a745;
+  }
+
+  .controls .fa-stop{
+    color: #dc3545;
+  }
+  
+  .controls .fa-pause{
+    color: #fff;
+  }
+   
+
 
 @media(max-width:800px){
     .screen,
